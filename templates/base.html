@@ -25,8 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>{% block title %}
-            {% endblock %} | Reuben J. Platon</title>
+  <title>{% block title %}{% endblock %} | Reuben J. Platon</title>
 
   <!-- Favicon -->
   <link rel="icon" href="static/img/core-img/favicon.ico">
@@ -83,6 +82,8 @@
   <!-- ***** Header Area End ***** -->
 
 {{ content|safe }}
+{% block repo_list %}
+{% endblock %}
 
 <!-- ***** Footer Area Start ***** -->
   <footer class="footer-area section-padding-80-0">

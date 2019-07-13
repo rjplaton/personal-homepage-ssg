@@ -12,7 +12,7 @@ urlpatterns = [
     path('blog/1.html', views.blog_post),
     path('blog/2.html', views.blog_post),
     path('blog/3.html', views.blog_post),
-    path('github-api-example', views.github_api_example),
+    path('repos.html', views.repos),
 ]
 
 # Boilerplate to include static files

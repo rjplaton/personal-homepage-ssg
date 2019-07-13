@@ -12,9 +12,18 @@ def index(request):
 def projects(request):
     content_html = open("content/projects.html").read()
     context = {
-    "content": content_html, 
+    "github_repos": repos,
+    "content": content_html,
     }
     return render(request, "projects.html", context)
+    
+def repos(request):
+    response = requests.get('https://api.github.com/users/rjplaton/repos')
+    repos = response.json()
+    context = {
+    "github_repos": repos,
+    }
+    return render(request, "repos.html", context)
 
 def blog(request):
     content_html = open("content/blog.html").read()
@@ -36,13 +45,4 @@ def blog_post(request):
     "content": content_html, 
     }
     return render(request, "blog_base.html", context)
-
-def github_api_example(request):
-    # We can also combine Django with APIs
-    response = requests.get('https://api.github.com/users/michaelpb/repos')
-    repos = response.json()
-    context = {
-        'github_repos': repos,
-    }
-    return render(request, 'github.html', context)
 
