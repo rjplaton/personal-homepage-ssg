@@ -12,6 +12,7 @@ settings.configure(
     STATIC_URL='static/',
     STATIC_ROOT=os.path.join(BASE_DIR, 'static'),
     INSTALLED_APPS=[
+        'bootstrap4',
         'django.contrib.staticfiles',
     ],
     TEMPLATES=[{
