@@ -1,3 +1,8 @@
+
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,14 +24,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>${title} | rjplaton's blog</title>
+  <title>Lorem Ipsum | rjplaton's blog</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="../img/core-img/favicon.ico">
+  <link rel="icon" href="../static/img/core-img/favicon.ico">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/css/custom.css">
 </head>
 
 <body>
@@ -46,10 +51,10 @@
         <nav class="classy-navbar justify-content-between" id="monaNav">
 
           <!-- Background Curve -->
-          <div class="bg-curve" style="background-image: url(../img/core-img/curve.png);"></div>
+          <div class="bg-curve" style="background-image: url(../static/img/core-img/curve.png);"></div>
 
           <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="../img/core-img/logo.png" alt=""></a>
+          <a class="nav-brand" href="index.html"><img src="../static/img/core-img/logo.png" alt=""></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -66,10 +71,10 @@
             <!-- Nav Start -->
             <div class="classynav">
               <ul id="nav">
-                <li ${index_class}><a href="../index.html">Home</a></li>
-                <li ${projects_class}><a href="../projects.html">Projects</a></li>
-                <li ${blog_class}><a href="../blog.html">Blog</a></li>
-                <li ${contact_class}><a href="../contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li class="current-item"><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
               </ul>
             </div>
             <!-- Nav End -->
@@ -92,7 +97,7 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-home"></i> Home</a></li>
                 <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
-                <li class="breadcrumb-item active" aria-current="page">${title}</li>
+                <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
               </ol>
             </nav>
           </div>
@@ -113,8 +118,8 @@
            <!-- Post Details Text -->
             <div class="post-details-text">
               <div class="post-content mt-30 mb-30">
-                <a href="#" class="post-date">${date}</a>
-                <h1>${title}</h1>
+                <a href="#" class="post-date">03 June 2019</a>
+                <h1>Lorem Ipsum</h1>
                 <!-- Post meta 
                 <div class="post-meta">
                   <a href="#" class="post-author">by Sarah Jenks</a>
@@ -125,7 +130,7 @@
               </div>
 
 
-{content}
+{{ content|safe }}
 
 
 <!-- Post Content End -->
@@ -273,13 +278,13 @@
 
   <!-- ******* All JS ******* -->
   <!-- jQuery js -->
-  <script src="../js/jquery.min.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
   <!-- Bootstrap js -->
-  <script src="../js/bootstrap.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
   <!-- All js -->
-  <script src="../js/mona.bundle.js"></script>
+  <script src="../static/js/mona.bundle.js"></script>
   <!-- Active js -->
-  <script src="../js/default-assets/active.js"></script>
+  <script src="../static/js/default-assets/active.js"></script>
 
 </body>
 

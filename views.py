@@ -30,6 +30,12 @@ def contact(request):
     }
     return render(request, "contact.html", context)
 
+def blog_post(request):
+    content_html = open("content/blog/1.html").read()
+    context = {
+    "content": content_html, 
+    }
+    return render(request, "blog_base.html", context)
 
 def github_api_example(request):
     # We can also combine Django with APIs

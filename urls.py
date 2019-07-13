@@ -9,6 +9,9 @@ urlpatterns = [
     path('projects.html', views.projects),
     path('blog.html', views.blog),
     path('contact.html', views.contact),
+    path('blog/1.html', views.blog_post),
+    path('blog/2.html', views.blog_post),
+    path('blog/3.html', views.blog_post),
     path('github-api-example', views.github_api_example),
 ]
 
