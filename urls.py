@@ -13,6 +13,7 @@ urlpatterns = [
     path('blog/2.html', views.blog_post),
     path('blog/3.html', views.blog_post),
     path('repos.html', views.repos),
+    path('send-email', views.send_email),
 ]
 
 # Boilerplate to include static files
