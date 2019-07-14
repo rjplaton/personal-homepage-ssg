@@ -1,6 +1,9 @@
 .col-sm-3 > label-150 {
     font-size: 150%;
 }
+.fa-icons {
+    padding-top: 10px;
+}
 /*Colorful Gradient*/
 .colorful {
   background:
@@ -142,7 +145,6 @@ div.post-details-text {
 
 dt {
     font-size: large;
-
 }
 
 

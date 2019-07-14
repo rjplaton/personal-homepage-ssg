@@ -1,4 +1,3 @@
-
 {% load bootstrap4 %}
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
@@ -82,7 +81,20 @@
   <!-- ***** Header Area End ***** -->
 
 {{ content|safe }}
+
+{% block index_content %}
+{% endblock %}
+
+{% block projects_content %}
+{% endblock %}
+
+{% block blog_content %}
+{% endblock %}
+
 {% block repo_list %}
+{% endblock %}
+
+{% block contact_form %}
 {% endblock %}
 
 <!-- ***** Footer Area Start ***** -->
@@ -103,9 +115,9 @@
 
             <!-- Social Info -->
             <div class="footer-social-info">
-              <a href="https://www.linkedin.com/in/reubenplaton/" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-              <a href="https://twitter.com/rjplaton" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-              <a href="https://github.com/rjplaton" class="github" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/reubenplaton/" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin fa-icons"></i></a>
+              <a href="https://twitter.com/rjplaton" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-icons"></i></a>
+              <a href="https://github.com/rjplaton" class="github" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fa fa-github fa-icons"></i></a>
             </div>
           </div>
         </div>
